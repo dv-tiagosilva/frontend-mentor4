@@ -6,31 +6,159 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Mobile First -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    body {
+      background-color: #F3EAE3;
+    }
+
+    main {
+      background-color: #F3EAE3;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section {
+      background-color: white;
+      width: 300px;
+      height: 500px;
+      border-radius: 10px;
+
+      display: flex;
+      flex-flow: column nowrap;
+      
+
+      overflow: hidden;
+    }
+
+   section > div.image {
+      display: block;
+
+      background-image: url(images/image-product-mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 330px;
+      height: 200px;
+    }
+
+    .text-card {
+      padding: 20px;
+    }
+
+    p#perfume {
+      font-size: 0.6em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      color: gray;
+
+      margin-bottom: 10px;
+    }
+
+    div.text-card > h1 {
+      font-family: "DM Serif Text", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.8em;
+      
+      line-height: 30px;
+
+      margin-bottom: 10px;
+    }
+
+    div.text-card > p {
+      color: #848383e5;
+      font-size: 0.7em;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      line-height: 20px;
+      letter-spacing: 1px;
+
+      margin-bottom: 10px;
+      
+    }
+
+    div.price {
+      display: flex;
+      flex-flow: row nowrap;
+      
+
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    div#sale-price {
+      
+      color: #3D8168;
+
+      font-family: "DM Serif Text", Georgia, 'Times New Roman', Times, serif;
+
+      font-size: 2em;
+    }
+
+    div#original-price {
+      color: #848383e5;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.8em;
+
+      text-indent: 20px;
+      text-decoration: line-through;
+    }
+
+    button {
+      
+    }
+
+    .attribution { font-size: 11px; text-align: center; 
+    }
+
+    .attribution a { color: hsl(228, 45%, 44%); 
+    }
+  
+
   </style>
 </head>
 <body>
+  <main>
+    <section>
+      <div class="image">
+      </div>
+      <div class="text-card">
+        <p id="perfume">P e r f u m e</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
 
-  Perfume
+        <div class="price">
+          <div id="sale-price">$149.99</div>
+          <div id="original-price">$169.99</div>
+        </div>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+        <button>Add to Cart</button>
+      </div>
+    </section>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
