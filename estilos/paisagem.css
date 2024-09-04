@@ -1,5 +1,6 @@
-    @charset "UTF-8";
+@charset "UTF-8";
 
+@media screen and (orientation:landscape) {
     @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 
@@ -8,8 +9,10 @@
       padding: 0px;
     }
     
-    body {
+    body, html {
       background-color: #F3EAE3;
+      width: 100dvw;
+      height: 100dvh;
     }
 
     main {
@@ -98,7 +101,7 @@
     }
 
     div#sale-price {
-
+      
       color: #3D8168;
 
       font-family: "DM Serif Text", Georgia, 'Times New Roman', Times, serif;
@@ -150,7 +153,7 @@
       font-size: 0.9em;
     }
 
-    /* footer {
+    footer {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -162,4 +165,6 @@
 
     .attribution a { color: hsl(228, 45%, 44%); 
     }
-   */
+  
+    
+}
