@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    
+    section {
+        width: 500px;
+        height: 400px;
+        flex-flow: row nowrap;
+      }
+
+      section > div.image {
+        display: block;
+
+        background-image: url(../images/image-product-desktop.jpg);
+        background-size: cover;
+        background-position: center left;
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 400px;
+      }
+
+      section > div.text-card {
+        width: 40%;
+        height: 400px;
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-flow: column nowrap;
+
+      }
+
+      div.text-card > h1 {
+        margin-bottom: 20px;
+      }
+
+      div.text-card > p {
+        color: #979797e5;
+        font-size: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        line-height: 20px;
+        
+  
+        margin-bottom: 10px;
+        text-indent: 0px;
+        text-align: justify;
+      }
+
+      div.price {
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 200px;
+      }
+
+}
